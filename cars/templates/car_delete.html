@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/cars_styles/car_delete.css' %}">
+  <form method="post">
+    {% csrf_token %}
+    <h1>Deletar Carro</h1>
+    <p class="message">Você tem certeza que deseja deletar o {{object.brand}} {{object.model}}?</p>
+    {% if car.photo %}
+    <div class="photo-div">
+      <img src="{{ object.photo.url }}" alt="{{ object.model }} - {{ object.brand }}">
+    </div>
+    {% else %}
+      <p>Foto não disponível</p>
+    {% endif %}
+    <div>
+      <div class="buttons-container">
+        <input type="submit" value="Deletar" class="btn btn-danger">
+        <a href="{% url 'cars_list' %}" class="btn btn-secondary">Cancelar</a>
+      </div>
+    </div>
+  </form>
+{% endblock %}

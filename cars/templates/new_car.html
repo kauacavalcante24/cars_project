@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/cars_styles/new_car.css' %}">
+
+<div class="forms-main">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h1>Cadastrar carro</h1>
+
+        <div class="form-div">
+            <div class="form-group-left">
+                <label>Modelo</label>
+                {{form.model}}
+    
+                <label>Marca</label>
+                {{form.brand}}
+    
+                <label>Ano de fabricação</label>
+                <div class="error_message">{{form.factory_year.errors}}</div>
+                {{form.factory_year}}
+
+                <label>Placa</label>
+                {{form.plate}}
+            </div>
+      
+            <div class="form-group-right">
+                <label>Ano do modelo</label>
+                {{form.model_year}}
+    
+                <label>Foto (opcional)</label>
+                {{ form.photo }}
+
+                <label id="textarea">Descrição (opcional)</label>
+                {{ form.description }}
+
+                <label>Valor</label>
+                <div class="error_message">{{form.value.errors}}</div>
+                {{form.value}}
+            </div>
+
+        </div>
+        <input type="submit" value="Cadastrar" class="btn btn-primary" id="btn-primary">
+    </form>
+
+</div>
+
+{% endblock %}

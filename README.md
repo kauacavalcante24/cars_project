@@ -3,5 +3,5 @@ Projeto de gestão de carros desenvolvido com o framework Django Python. O siste
 
 ## Imagem do projeto 
 
-### Listagem dos Carros Cadastrados
+> ### Listagem dos Carros Cadastrados
 ![image](./static/img/example-image/github_carslist.png)

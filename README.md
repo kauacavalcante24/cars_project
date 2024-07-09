@@ -1,5 +1,5 @@
 # Projeto Carros
-Projeto de gestão de carros desenvolvido com o framework Django Python. O sistema oferece funcionalidades para controle de veículos. Além de poder integrar-se a API do GEMINI para gerar descrições, em caso de vazias.
+Projeto de gestão de carros desenvolvido com o framework Django Python. Capaz de criar, deletar, editar e listar todos os veículos, o sistema também pode utilizar a IA Gemini para gerar as descrições não preenchidas dos carros.
 
 ## Imagem do projeto 
 

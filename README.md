@@ -10,3 +10,6 @@ Projeto de gestão de carros desenvolvido com o framework Django Python. Capaz d
 
 > ### Cadastro de Novos Carros
 ![image](./static/img/example-image/github_newcar.png)
+
+> ### Detalhes do Carro
+![image](./static/img/example-image/github_details.png)

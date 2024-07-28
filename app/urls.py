@@ -7,7 +7,6 @@ from account.views import create_account, login_view, logout_view
 
 
 urlpatterns = [
-    #     Rota           #View
     path('admin/', admin.site.urls),
     path('', CarListView.as_view()),
 

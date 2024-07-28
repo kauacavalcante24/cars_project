@@ -17,6 +17,7 @@ def create_account(request):
         {'user_form': user_form}
     )
 
+
 def login_view(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -35,6 +36,7 @@ def login_view(request):
         {'login_form': login_form}
     )
 
+
 def logout_view(request):
     logout(request)
-    return redirect ('cars_list')
+    return redirect('cars_list')
